@@ -1,0 +1,190 @@
+* {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5em;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: .3em;
+}
+
+.form-control input {
+  padding: 5px;
+}
+
+.books-container div {
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#navbar {
+  border-bottom: 1px solid #ccc;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  background-color: #c01f57;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+#navbar ul li {
+  margin-left: 1em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.form-checkbox {
+  flex-direction: row;
+}
+
+.form-control input,
+.form-control textarea {
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 450px;
+  margin: 2em auto;
+}
+
+.container form {
+  margin-top: 1.5em;
+}
+
+.form input[type="submit"] {
+  background-color:#c01f57;;
+  color: #fff;
+  padding: .7em 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  margin-top: 1em;
+}
+
+.task-list li {
+  padding: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-list .title {
+  font-weight: bold;
+  color:#c01f57;;
+  transition: .5s;
+  font-size: 1.2em;
+}
+
+.task-list .title:hover {
+  color: #333;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions i {
+  font-size: 1.5em;
+  margin-right: .6em;
+  color: #333;
+}
+
+.actions i:hover {
+  color:#c01f57;;
+}
+
+.actions form {
+  margin: 0;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.title.done{
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+h3 {
+  color:#c01f57;
+}
+
+.title-node {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 600px) {
+  #navbar {
+    font-size: 16px;
+  }
+
+  #navbar:hover {
+    background-color: #c01f57;
+  }
+
+  .container {
+    padding: 0.5em;
+    max-width: 100%;
+  }
+
+  .form-control input,
+  .form-control textarea {
+    padding: 7px;
+    font-size: 0.9em;
+  }
+
+  .form input[type="submit"] {
+    padding: .5em 1em;
+    font-size: 0.9em;
+  }
+
+  .task-list .title {
+    font-size: 1em;
+  }
+
+  .actions i {
+    font-size: 1.2em;
+  }
+}
